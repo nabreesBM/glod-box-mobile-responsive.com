@@ -1,0 +1,1728 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Root */
+:root {
+    ---white: #ffffff;
+    ---lightgray: #a0a09f;
+    ---yellow: #e5ac04;
+    ---grident: linear-gradient(180deg, #e4aa00, #fff4b6);
+    ---stoke: #f4d56b;
+}
+
+/* Root */
+
+/* Body */
+* {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 0px;
+    background-image: url(img/back.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section {
+    padding: 10px 150px;
+}
+
+/* Body */
+
+/* Header */
+.header {
+    background-color: transparent
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .container .navbar .link a {
+    font-size: 20px;
+    color: var(---white);
+    font-weight: 400;
+    padding: 50px 20px;
+}
+
+.header .container .navbar .link a:hover{
+    background: var(---grident);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-top: 3px solid var(---yellow);
+    border-bottom: 3px solid var(---yellow);
+    font-weight: 600;
+}
+
+.header .container .right-data {
+    display: flex;
+    align-items: center;
+}
+
+.header .container .right-data i {
+    border: 2px solid var(---lightgray);
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(---lightgray);
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.header .container .right-data #menu{
+    display: none;
+}
+.header .container .right-data i:hover{
+    background: var(---grident);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.header .container .right-data button {
+    width: 200px;
+    height: 70px;
+    color: var(---white);
+    border-radius: 100px;
+    background-color: transparent;
+    border: 3px solid var(---stoke);
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.header .container .right-data button:hover {
+    color: var(---stoke);
+}
+
+.header .container .navbar.active{
+    left: 0%;
+    transition: 0.6s linear;
+}
+
+/*----------------Search Here----------------*/
+.search {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    left: -100%;
+    right: 0;
+    transition: 0.6s linear;
+    z-index: 7;
+}
+
+.search .container {
+    backdrop-filter: blur(50px);
+    border: 2px solid var(---lightgray);
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.search .container h1 {
+    text-align: center;
+    color: var(---white);
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.search .container span {
+    background: var(---grident);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+
+.search .container .input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1200px;
+    height: 100px;
+    margin-top: 50px;
+}
+
+.search .container .input input {
+    width: 100%;
+    height: 100%;
+    border-radius: 100px 0px 0px 100px;
+    font-size: 20px;
+    color: var(---lightgray);
+    padding-left: 50px;
+}
+
+.search .container .input input::placeholder {
+    color: var(---lightgray);
+}
+
+.search .container .all-data .input #searchbar {
+    width: 150px;
+    height: 100%;
+    background-color: var(---lightgray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    border-radius: 0px 100px 100px 0px;
+    color: var(---white);
+    cursor: pointer;
+}
+
+.search .container .all-data .input #searchbar:hover{
+    background: var(---grident);
+}
+
+.search.searchactive{
+    left: 0%;
+    transition: 0.6s linear;
+}
+
+/*----------------Search Here----------------*/
+
+/*----------------Hero Area -----------------*/
+.hero{
+    background-color: transparent;
+}
+.hero .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero .container .text p{
+    font-size: 20px;
+    color: var(---lightgray);
+}
+.hero .container .text h1{
+    font-size: 100px;
+    color: var(---white);
+    font-weight: 500;
+    line-height: 120px;
+    margin-top: 20px;
+}
+.hero .container .text span{
+    font-size: 120px;
+    font-weight: 700;
+    background: var(---grident);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.hero .container .text h5{
+    background: var(---grident);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.hero .container .text .all-button{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+.hero .container .text .all-button .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(---stoke);
+    border-radius: 100px;
+    width: 250px;
+    height: 80px;
+    cursor: pointer;
+}
+.hero .container .text .all-button .btn p{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(---white);
+    margin-left: 10px;
+}
+.hero .container .text .all-button .btn i{
+    font-size: 25px;
+    color: var(---white);
+}
+.hero .container video{
+    width: 700px;
+    height: 700px;
+}
+.hero .container .text .all-button #btn2{
+    border: 2px solid var(---lightgray);
+    margin-left: 20px;
+}
+.hero .container .text .all-button #btn2:hover{
+    border: 2px solid var(---stoke);
+}
+
+/*----------------Hero Area -------------------*/
+
+/*----------------Product Area ----------------*/
+.pro{
+    margin-top: 150px;
+}
+.pro .heading .top{
+    display: flex;
+    align-items: center;
+}
+.pro .heading .top .line{
+    width: 200px;
+    height: 5px;
+    background-color: var(---lightgray);
+}
+.pro .heading .top h6{
+    font-size: 40px;
+    background: var(---grident);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 20px;
+}
+.pro .heading h1{
+    margin-left: 220px;
+    color: var(---white);
+    font-size: 70px;
+    font-weight: 500;
+    margin-top: 50px;
+}
+.pro .container{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.pro .container .box{
+    background-color: transparent;
+}
+.pro .container .box .data .text .line{
+    width: 45px;
+    height: 5px;
+    background: var(---grident);
+    margin-top: 20px;
+    animation: loading 3s linear infinite;
+}
+.pro .container .box .data .text h1{
+    font-size: 35px;
+    color: var(---white);
+    font-weight: 600;
+    margin-top: 20px;
+}
+.pro .container .box .data .text button{
+    background-color: transparent;
+    font-size: 19px;
+    color: var(---white);
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.pro .container .box .data .text button i{
+    color: var(---white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+.pro .container .box .data .text button i:hover{
+    background: var(---grident);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@keyframes loading{
+    0% { width: 0; }
+    100% { width: 120px; }
+}
+/*----------------Product Area ----------------*/
+
+/*----------------Abouts  Area ----------------*/
+.abo{
+    margin-top: 150px;
+}
+.abo .heading .top{
+    display: flex;
+    align-items: center;
+}
+.abo .heading .top .line{
+    width: 200px;
+    height: 5px;
+    background-color: var(---lightgray);
+}
+.abo .heading .top h6{
+    font-size: 40px;
+    background: var(---grident);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 20px;
+}
+.abo .heading h1{
+    margin-left: 220px;
+    color: var(---white);
+    font-size: 70px;
+    font-weight: 500;
+    margin-top: 50px;
+}
+.abo .heading span{
+    background: var(---grident);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+.abo .container{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.abo .container .text #paragraph{
+    font-size: 16px;
+    color: var(---lightgray);
+    line-height: 40px;
+    font-weight: 500;
+}
+.abo .container .text strong{
+    background: var(---grident);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.abo .container .text .all-button{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+.abo .container .text .all-button .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(---stoke);
+    border-radius: 100px;
+    width: 250px;
+    height: 80px;
+    cursor: pointer;
+}
+.abo .container .text .all-button .btn p{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(---white);
+    margin-left: 10px;
+}
+.abo .container .text .all-button .btn i{
+    font-size: 25px;
+    color: var(---white);
+}
+.abo .container video{
+    width: 700px;
+    height: 700px;
+}
+.abo .container .text .all-button #btn2{
+    border: 2px solid var(---lightgray);
+    margin-left: 20px;
+}
+.abo .container .text .all-button #btn2:hover{
+    border: 2px solid var(---stoke);
+}
+
+/*----------------Abouts  Area ----------------*/
+
+/*----------------=Testimonial  Area ----------*/
+.tes{
+    margin-top: 150px;
+}
+.tes .heading .top{
+    display: flex;
+    align-items: center;
+}
+.tes .heading .top .line{
+    width: 200px;
+    height: 5px;
+    background-color: var(---lightgray);
+}
+.tes .heading .top h6{
+    font-size: 40px;
+    background: var(---grident);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 20px;
+}
+.tes .heading h1{
+    margin-left: 220px;
+    color: var(---white);
+    font-size: 70px;
+    font-weight: 500;
+    margin-top: 50px;
+}
+.tes .heading span{
+    background: var(---grident);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+.tes .all-slider{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tes .all-slider .box .image img{
+    border: 5px solid #a0a09f;
+    border-radius: 20px;
+}
+.tes .all-slider .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+.tes .all-slider .box .text{
+    width: 560px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    background-color: #0000001e;
+    border: 2px solid var(---lightgray); 
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.384);
+    margin-left: 20px;
+}
+.tes .all-slider .box .text .data{
+    margin-left: 20px;
+}
+.tes .all-slider .box .text .data h5{
+    font-size: 19px;
+    color: var(---white);
+    font-weight: 600;
+}
+.tes .all-slider .box .text .data p{
+    font-size: 12px;
+    color: var(---white);
+    line-height: 30px;
+    margin-top: 10px;
+}
+.tes .all-slider .box .text .data .star{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.tes .all-slider .box .text .data .star i{
+    color: var(---yellow);
+    padding-right: 10px;
+}
+.tes .all-slider .box .text .data .star span{
+    color: var(---white);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/*----------------=Testimonial  Area ----------*/
+
+/*----------------=Contact Us  Area ----------*/
+.con{
+    margin-top: 150px;
+}
+.con .heading .top{
+    display: flex;
+    align-items: center;
+}
+.con .heading .top .line{
+    width: 200px;
+    height: 5px;
+    background-color: var(---lightgray);
+}
+.con .heading .top h6{
+    font-size: 40px;
+    background: var(---grident);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 20px;
+}
+.con .heading h1{
+    margin-left: 220px;
+    color: var(---white);
+    font-size: 70px;
+    font-weight: 500;
+    margin-top: 50px;
+}
+.con .heading span{
+    background: var(---grident);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+.con .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+.con .input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1200px;
+    height: 150px;
+    border: 5px solid var(---lightgray);
+    border-radius: 20px;
+    font-size: 20px;
+}
+.con .container .input input::placeholder{
+    color: var(---white);
+    font-size: 20px;
+}
+.con .input input{
+    width: 100%;
+    height: 100%;
+    color: var(---white);
+    background-color: transparent;
+    font-size: 20px;
+    padding-left: 20px;
+    border-radius: 15px 0px 0px 15px;
+}
+.con .input button{
+    width: 250px;
+    height: 90px;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 2px solid var(---stoke);
+    color: var(---white);
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.con .input button:hover{
+    color: var(---stoke);
+}
+
+/*----------------=Contact Us  Area ----------*/
+
+/*-----------------Footer Area ---------------*/
+.fot{
+    margin-top: 150px;
+    background-color: rgba(0, 0, 0, 0.144);
+    border-top: 2px solid var(---lightgray);
+}
+.fot .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.fot .container .navbar a{
+    color: var(---white);
+    font-size: 20px;
+    padding: 0px 20px;
+}
+.fot .container .navbar a:hover{
+    background: var(---grident);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+.fot .container .icon{
+    display: flex;
+    align-items: center;
+}
+.fot .container .icon i{
+    width: 90px;
+    height: 90px;
+    border: 2px solid var(---lightgray);
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border-radius: 10px;
+    color: var(---white);
+    cursor: pointer;
+}
+.fot .container .icon i:hover{
+    color: var(---stoke);
+    border: 2px solid var(---stoke);
+}
+.fot .line{
+    width: 100%;
+    height: 2px;
+    background-color: var(---lightgray);
+    margin-top: 30px;
+}
+.fot p{
+    font-size: 20px;
+    color: var(---white);
+    text-align: center;
+    margin-top: 10px;
+}
+/*-----------------Footer Area ---------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media quries */
+
+@media (max-width:1772px) {
+    section {
+        padding: 20px 120px;
+    }
+}
+
+@media (max-width:1674px) {
+    section {
+        padding: 20px 100px;
+    }
+
+}
+
+@media (max-width:1590px) {
+    section {
+        padding: 20px 75px;
+    }
+
+    .search .container .input {
+        width: 1000px;
+        height: 100px;
+    }
+    .abo .container .image{
+        width: 700px;
+    }
+    .abo .container .image img{
+        width: 100%;
+    }
+    .tes .all-slider .box .text .data p{
+        font-size: 10px;
+        color: var(---white);
+        line-height: 20px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width:1486px) {
+    .hero .container .text p{
+        font-size: 16px;
+        color: var(---lightgray);
+    }
+    .hero .container .text h1{
+        font-size: 90px;
+        color: var(---white);
+        font-weight: 500;
+        line-height: 120px;
+        margin-top: 20px;
+    }
+    .hero .container .text span{
+        font-size: 110px;
+        font-weight: 700;
+        background: var(---grident);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .abo .container .image{
+        width: 600px;
+    }
+}
+
+@media (max-width:1390px) {
+    section {
+        padding: 20px 50px;
+    }
+}
+
+@media (max-width:1280px) {
+
+    html {
+        font-size: 80%;
+    }
+
+    section {
+        padding: 20px 25px;
+    }
+
+    .header .container .navbar {
+        border-radius: 10px 0px 0px 0px;
+        position: absolute;
+        right: 0;
+        left: -110%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 16%;
+        width: 100%;
+        transition: 0.6s linear;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+        z-index: 7;
+    }
+
+    .header .container .navbar .link {
+        width: 95%;
+        backdrop-filter: blur(70px);
+        margin: 0px auto;
+        box-shadow: 0px 0px 50px #12073642;
+        border-left: 2px solid var(---lightgray);
+        border-right:2px solid var(---lightgray) ;
+    }
+
+    .header .container .navbar .link a {
+        display: block;
+        text-align: center;
+    }
+
+    .header .container .right-data #menu {
+        display: inherit;
+    }
+
+    .search .container h1 {
+        font-size: 50px;
+    }
+
+    .search {
+        top: 14%;
+    }
+    .hero .container{
+        display: block;
+        text-align: center;
+    }
+    .hero .container .text .all-button{
+        justify-content: center;
+    }
+    .hero .container video{
+        margin-top: 100px;
+    }
+    .pro{
+        margin-top: 100px;
+    }
+    .pro .heading .top{
+        display: block;
+        text-align: center;
+    }
+    .pro .heading .top h6{
+        font-size: 40px;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .pro .heading .top .line{
+        margin: 0px auto;
+    }
+    .pro .heading h1{
+        text-align: center;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    .abo{
+        margin-top: 100px;
+    }
+    .abo .heading .top{
+        display: block;
+        text-align: center;
+    }
+    .abo .heading .top h6{
+        font-size: 40px;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .abo .heading .top .line{
+        margin: 0px auto;
+    }
+    .abo .heading h1{
+        text-align: center;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    .abo .container{
+        display: block;
+    }
+    .abo .container .image{
+        margin: 0px auto;
+    }
+    .abo .container .text{
+        text-align: center;
+        margin-top: 50px;
+    }
+    .abo .container .text .all-button{
+        justify-content: center;
+    }
+    .tes{
+        margin-top: 100px;
+    }
+    .tes .heading .top{
+        display: block;
+        text-align: center;
+    }
+    .tes .heading .top h6{
+        font-size: 40px;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .tes .heading .top .line{
+        margin: 0px auto;
+    }
+    .tes .heading h1{
+        text-align: center;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    .con{
+        margin-top: 100px;
+    }
+    .con .heading .top{
+        display: block;
+        text-align: center;
+    }
+    .con .heading .top h6{
+        font-size: 40px;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .con .heading .top .line{
+        margin: 0px auto;
+    }
+    .con .heading h1{
+        text-align: center;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    .fot{
+        margin-top: 100px;
+    }
+    .fot .container{
+        display: block;
+        text-align: center;
+    }
+    .fot .container .navbar{
+        margin: 20px 0px;
+    }
+    .fot .container a{
+        display: block;
+        line-height: 50px;
+    }
+    .fot .container .icon{
+        justify-content: center;
+    }
+    .fot .container .icon i{
+        margin-left: 0px;
+        margin: 0px 10px;
+    }
+}
+
+@media (max-width:1080px) {
+    section {
+        padding: 20px 20px;
+    }
+
+    .search .container .input {
+        width: 800px;
+        height: 100px;
+    }
+    .pro .container .box .data .text h1{
+        font-size: 25px;
+        color: var(---white);
+        font-weight: 600;
+        margin-top: 20px;
+    }
+    .pro .container .box .data .text button{
+        background-color: transparent;
+        font-size: 19px;
+        color: var(---white);
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        justify-content: center;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width:880px) {
+
+    section {
+        padding: 20px 15px;
+    }
+
+    .search .container h1 {
+        font-size: 40px;
+    }
+
+    .search .container .input {
+        width: 600px;
+        height: 90px;
+        background-color: transparent;
+        margin: 0px auto;
+        margin-top: 30px;
+    }
+
+    .search .container {
+        backdrop-filter: blur(50px);
+        border: 2px solid var(---lightgray);
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width:780px) {
+    .hero .container video{
+        width: 100%;
+        height: 100%;
+    }
+    .pro .container .box .data .image{
+        width: 100px;
+        height: 100px;
+    }
+    .pro .container .box .data .image img{
+        width: 100%;
+        height: 100%;
+    }
+    @keyframes loading{
+        0% { width: 0; }
+        100% { width: 100px; }
+    }
+    .pro .container .box .data .text button{
+        font-size: 16px;
+    }
+}
+
+@media (max-width:690px) {
+    section {
+        padding: 20px 10px;
+    }
+    .header .container .navbar{
+        top: 12%;
+    }
+    .header .container .right-data button {
+        width: 150px;
+        height: 60px;
+        color: var(---white);
+        border-radius: 100px;
+        background-color: transparent;
+        border: 3px solid var(---stoke);
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    .header .container .right-data i {
+        margin-right: 10px;
+    }
+    .header .container .navbar .link a {
+        padding: 40px 20px;
+    }
+    .search .container .input {
+        width: 500px;
+        height: 90px;
+        background-color: transparent;
+        margin: 0px auto;
+        margin-top: 30px;
+    }
+
+    .search .container .input input {
+        padding-left: 20px;
+    }
+
+    .search .container .input i {
+        width: 100px;
+        font-size: 22px;
+    }
+
+    .search .container h1 {
+        text-align: center;
+        color: var(---white);
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .hero .container .text p{
+        font-size: 14px;
+        color: var(---lightgray);
+    }
+    .hero .container .text h1{
+        font-size: 70px;
+        color: var(---white);
+        font-weight: 500;
+        margin-top: 10px;
+        line-height: 100px;
+    }
+    .hero .container .text span{
+        font-size: 90px;
+        font-weight: 700;
+        background: var(---grident);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .hero .container .text h5{
+        margin-top: 10px;
+    }
+    .hero .container .text .all-button .btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid var(---stoke);
+        border-radius: 100px;
+        width: 200px;
+        height: 70px;
+        cursor: pointer;
+    }
+    .hero .container .text .all-button .btn p{
+        font-size: 12px;
+        font-weight: 500;
+        color: var(---white);
+        margin-left: 10px;
+    }
+    .hero .container .text .all-button .btn i{
+        font-size: 20px;
+        color: var(---white);
+    }
+    .hero .container video{
+        margin-top: 50px;
+    }
+    .pro{
+        margin-top: 50px;
+    }
+    .pro .container{
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+    .pro .heading h1{
+        font-size: 60px;
+    }
+    .abo{
+        margin-top: 50px;
+    }
+    .abo .container{
+        margin-top: 50px;
+    }
+    .abo .heading h1{
+        font-size: 60px;
+    }
+    .abo .container .image{
+        width: 100%;
+    }
+    .abo .container .text .all-button .btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid var(---stoke);
+        border-radius: 100px;
+        width: 200px;
+        height: 70px;
+        cursor: pointer;
+    }
+    .abo .container .text .all-button .btn p{
+        font-size: 12px;
+        font-weight: 500;
+        color: var(---white);
+        margin-left: 10px;
+    }
+    .abo .container .text .all-button .btn i{
+        font-size: 20px;
+        color: var(---white);
+    }
+    .abo .container .text #paragraph{
+        font-size: 14px;
+    }
+    .tes{
+        margin-top: 50px;
+    }
+    .tes .all-slider{
+        margin-top: 50px;
+    }
+    .tes .heading h1{
+        font-size: 60px;
+    }
+    .tes .all-slider .box{
+        display: block;
+    }
+    .tes .all-slider .box .text{
+        width: 100%;
+        height: 150px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    .tes .all-slider .image{
+        width: 150px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        margin: 0px auto;
+    }
+    .tes .all-slider .image img{
+        width: 100%;
+    }
+    .tes .all-slider .image{
+        width: 100px;
+    }
+    .con{
+        margin-top: 50px;
+    }
+    .con .container{
+        margin-top: 50px;
+    }
+    .con .heading h1{
+        font-size: 60px;
+    }
+    .fot{
+        margin-top: 50px;
+    }
+}
+
+@media (max-width:550px) {
+    .header .container .right-data button {
+        width: 100px;
+        height: 50px;
+        color: var(---white);
+        border-radius: 100px;
+        background-color: transparent;
+        border: 3px solid var(---stoke);
+        font-size: 12px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    .header .container .logo{
+        width: 150px;
+    }
+    .header .container .logo img{
+        width: 100%;
+    }
+    .header .container .right-data i {
+        border: 2px solid var(---lightgray);
+        width: 40px;
+        height: 40px;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(---lightgray);
+        font-size: 14px;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    .header .container .navbar .link a {
+        padding: 30px 20px;
+    }
+    .search {
+        top: 12%;
+    }
+    .search .container h1 {
+        text-align: center;
+        color: var(---white);
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .search .container .input input {
+        padding-left: 20px;
+        font-size: 14px;
+    }
+
+    .search .container .input i {
+        width: 80px;
+        font-size: 20px;
+    }
+    .search .container .input {
+        width: 350px;
+        height: 70px;
+        background-color: transparent;
+        margin: 0px auto;
+        margin-top: 20px;
+    }
+    .abo .container .text #paragraph{
+        font-size: 12px;
+    }
+    .fot p{
+        font-size: 16px;
+        color: var(---white);
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width:500px) {
+    .search .container{
+        height: 200px;
+    }
+    .search .container h1 {
+        text-align: center;
+        color: var(---white);
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .search .container .input {
+        width: 300px;
+        height: 70px;
+        background-color: transparent;
+        margin: 0px auto;
+        margin-top: 20px;
+    }
+    .hero .container .text #para{
+        font-size: 12px;
+        color: var(---lightgray);
+        line-height: 30px;
+    }
+    .hero .container .text h1{
+        font-size: 50px;
+        color: var(---white);
+        font-weight: 500;
+        margin-top: 10px;
+        line-height: 70px;
+    }
+    .hero .container .text span{
+        font-size: 60px;
+        font-weight: 700;
+        background: var(---grident);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .hero .container .text h5{
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .hero .container .text .all-button{
+        margin-top: 20px;
+    }
+    .hero .container .text .all-button .btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid var(---stoke);
+        border-radius: 100px;
+        width: 150px;
+        height: 60px;
+        cursor: pointer;
+    }
+    .hero .container .text .all-button .btn p{
+        font-size: 10px;
+        font-weight: 500;
+        color: var(---white);
+        margin-left: 10px;
+    }
+    .hero .container .text .all-button .btn i{
+        font-size: 16px;
+        color: var(---white);
+    }
+    .hero .container .text .all-button #btn2{
+        border: 2px solid var(---lightgray);
+        margin-left: 10px;
+    }
+    .pro .container .box{
+        margin: 20px 0px;
+    }
+    .pro .heading h1{
+        font-size: 50px;
+    }
+    .pro .heading .top h6{
+        font-size: 30px;
+        background: var(---grident);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-left: 20px;
+    }
+    .abo .heading h1{
+        font-size: 50px;
+    }
+    .abo .heading .top h6{
+        font-size: 30px;
+        background: var(---grident);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-left: 20px;
+    }
+    .abo .container .text .all-button{
+        margin-top: 20px;
+    }
+    .abo .container .text .all-button .btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid var(---stoke);
+        border-radius: 100px;
+        width: 150px;
+        height: 60px;
+        cursor: pointer;
+    }
+    .abo .container .text .all-button .btn p{
+        font-size: 10px;
+        font-weight: 500;
+        color: var(---white);
+        margin-left: 10px;
+    }
+    .abo .container .text .all-button .btn i{
+        font-size: 16px;
+        color: var(---white);
+    }
+    .abo .container .text .all-button #btn2{
+        border: 2px solid var(---lightgray);
+        margin-left: 10px;
+    }
+    .abo .container .text #paragraph{
+        font-size: 10px;
+        line-height: 30px;
+    }
+    .tes .heading h1{
+        font-size: 50px;
+    }
+    .tes .heading .top h6{
+        font-size: 30px;
+        background: var(---grident);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-left: 20px;
+    }
+    .tes .all-slider .box .text .data{
+        margin-left: 10px;
+    }
+    .con .heading h1{
+        font-size: 45px;
+    }
+    .con .heading .top h6{
+        font-size: 30px;
+        background: var(---grident);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-left: 0px;
+    }
+    .con .container .input input::placeholder{
+        color: var(---white);
+        font-size: 16px;
+    }
+    .con .input input{
+        width: 100%;
+        height: 100%;
+        color: var(---white);
+        background-color: transparent;
+        font-size: 16px;
+    }
+    .con .input button{
+        width: 200px;
+        height: 70px;
+        background-color: transparent;
+        border-radius: 20px;
+        border: 2px solid var(---stoke);
+        color: var(---white);
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+    .fot p{
+        font-size: 12px;
+        color: var(---white);
+        text-align: center;
+        margin-top: 13px;
+    }
+}
+@media (max-width:400px) {
+    .header .container .logo{
+        width: 100px;
+    }
+    .header .container .navbar{
+        top: 10%;
+    }
+    .search .container h1 {
+        text-align: center;
+        color: var(---white);
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .search .container .input {
+        width: 300px;
+        height: 70px;
+        background-color: transparent;
+        margin: 0px auto;
+        margin-top: 20px;
+    }
+    .search {
+        top: 8%;
+    }
+    .hero .container .text #para{
+        font-size: 10px;
+        color: var(---lightgray);
+        line-height: 20px;
+    }
+    .hero .container .text .all-button .btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid var(---stoke);
+        border-radius: 100px;
+        width: 120px;
+        height: 50px;
+        cursor: pointer;
+    }
+    .hero .container .text .all-button .btn p{
+        font-size: 8px;
+        font-weight: 500;
+        color: var(---white);
+        margin-left: 5px;
+    }
+    .hero .container .text .all-button .btn i{
+        font-size: 12px;
+        color: var(---white);
+    }
+    .hero .container video{
+        margin-top: 30px;
+    }
+    .pro .heading h1{
+        font-size: 40px;
+    }
+    .pro .heading .top h6{
+        font-size: 20px;
+        background: var(---grident);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-left: 20px;
+    }
+    .pro .container .box .data .text h1{
+        font-size: 20px;
+    }
+    .pro .container{
+        margin-top: 30px;
+    }
+    .pro{
+        margin-top: 30px;
+    }
+    .abo{
+        margin-top: 30px;
+    }
+    .abo .container{
+        margin-top: 30px;
+    }
+    .abo .container .text{
+        margin-top: 30px;
+    }
+    .abo .heading h1{
+        font-size: 40px;
+    }
+    .abo .heading .top h6{
+        font-size: 20px;
+        background: var(---grident);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-left: 20px;
+    }
+    .abo .container .text #paragraph{
+        font-size: 10px;
+        line-height: 25px;
+    }
+    .abo .container .text .all-button .btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid var(---stoke);
+        border-radius: 100px;
+        width: 120px;
+        height: 50px;
+        cursor: pointer;
+    }
+    .abo .container .text .all-button .btn p{
+        font-size: 8px;
+        font-weight: 500;
+        color: var(---white);
+        margin-left: 5px;
+    }
+    .abo .container .text .all-button .btn i{
+        font-size: 12px;
+        color: var(---white);
+    }
+    .tes .heading h1{
+        font-size: 40px;
+    }
+    .tes .heading .top h6{
+        font-size: 20px;
+        background: var(---grident);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-left: 20px;
+    }
+    .tes{
+        margin-top: 30px;
+    }
+    .tes .all-slider{
+        margin-top: 30px;
+    }
+    .tes .all-slider .box .text .data p{
+        font-size: 7px;
+        color: var(---white);
+        line-height: 15px;
+        margin-top: 10px;
+    }
+    .tes .all-slider .box .text .data h5{
+        font-size: 16px;
+        color: var(---white);
+        font-weight: 600;
+    }
+    .tes .all-slider .box .text .data .star i{
+        color: var(---yellow);
+        padding-right: 5px;
+    }
+    .tes .all-slider .box .text .data .star span{
+        color: var(---white);
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .con{
+        margin-top: 30px;
+    }
+    .con .container{
+        margin-top: 30px;
+    }
+    .con .heading h1{
+        font-size: 40px;
+    }
+    .con .heading .top h6{
+        font-size: 20px;
+        background: var(---grident);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-left: 0px;
+    }
+    .con .input{
+        height: 120px;
+    }
+    .fot{
+        margin-top: 30px;
+    }
+}
+@media (max-width:370px) {
+    .abo .container .text #paragraph{
+        font-size: 8px;
+        line-height: 20px;
+    }
+    .hero .container .text #para{
+        font-size: 8px;
+    }
+}
+@media (max-width:350px) {
+    .header .container .navbar{
+        top: 9%;
+    }
+    .header .container .logo{
+        width: 80px;
+    }
+    .search .container h1 {
+        text-align: center;
+        color: var(---white);
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .search .container .input {
+        width: 250px;
+        height: 60px;
+        background-color: transparent;
+        margin: 0px auto;
+        margin-top: 10px;
+    }
+    .search .container .input i {
+        width: 70px;
+        font-size: 16px;
+    }
+    .search {
+        top: 6.5%;
+    }
+    .abo .heading h1{
+        font-size: 30px;
+    }
+    .tes .heading h1{
+        font-size: 30px;
+    }
+    .con .heading h1{
+        font-size: 30px;
+    }
+    .con .container .input input::placeholder{
+        color: var(---white);
+        font-size: 12px;
+    }
+    .con .input{
+        height: 90px;
+    }
+    .con .input input{
+        width: 100%;
+        height: 100%;
+        color: var(---white);
+        background-color: transparent;
+        font-size: 12px;
+        padding-left: 5px;
+    }
+    .con .input button{
+        margin-right: 5px;
+        width: 150px;
+        height: 60px;
+        font-size: 12px;
+        border-radius: 10px;
+    }
+    .fot .container .icon i{
+        width: 70px;
+        height: 70px;
+        font-size: 25px;
+    }
+    .fot p{
+        font-size: 10px;
+        color: var(---white);
+        text-align: center;
+        margin-top: 13px;
+    }
+}
+@media (width:320px) {
+    .hero .container .text h1{
+        font-size: 40px;
+        color: var(---white);
+        font-weight: 500;
+        line-height: 50px;
+        margin-top: 5px;
+    }
+    .hero .container .text span{
+        font-size: 50px;
+        font-weight: 700;
+        background: var(---grident);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .hero .container .text h5{
+        background: var(---grident);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 12px;
+        font-weight: 500;
+        margin-top: 5px;
+    }
+    .hero .container .text .all-button{
+        margin-top: 15px;
+    }
+    .pro .heading .top .line{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .abo .heading .top .line{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .tes .heading .top .line{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .con .heading .top .line{
+        width: 100%;
+        margin-left: 0px;
+    }
+}
+/* media quries */
